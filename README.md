@@ -16,9 +16,11 @@ Docker stack info:
 
 2) Change the .env-example outside the laravel folder (ebuzzer-backend parent folder) the ports number that you want to use and rename it to .env
 
-3) Build the the docker image: docker-compose build --no-cache
+3) If the docker's network is not declared then create new one: docker network create ebuzzer-network
 
-4) Up the containers: docker-compose up -d
+4) Build the the docker image: docker-compose build --no-cache
+
+5) Up the containers: docker-compose up -d
 
 Laravel settings:
 
